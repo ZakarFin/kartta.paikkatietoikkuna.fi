@@ -12,6 +12,7 @@ import org.apache.commons.fileupload2.jakarta.servlet6.JakartaServletFileUpload;
 import org.json.JSONObject;
 
 import jakarta.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
@@ -146,7 +147,16 @@ public class TransformParams {
                 .filter(f -> f.isFormField())
                 .collect(Collectors.toMap(
                         f -> f.getFieldName(),
-                        f -> new String(f.get(), StandardCharsets.UTF_8)));
+                        f -> getFieldValue(f)));
+    }
+
+    private String getFieldValue(FileItem item) {
+        try {
+            return item.getString(StandardCharsets.UTF_8);
+        } catch (IOException ignored) {
+            /* ignored */
+        }
+        return null;
     }
 
     private FileItem getFile(List<FileItem> fileItems) throws ActionParamsException {
