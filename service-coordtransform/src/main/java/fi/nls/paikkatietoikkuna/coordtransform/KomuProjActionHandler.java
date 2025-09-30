@@ -1,6 +1,7 @@
 package fi.nls.paikkatietoikkuna.coordtransform;
 
 import fi.nls.oskari.control.ActionCommonException;
+import fi.nls.oskari.control.ActionDeniedException;
 import fi.nls.oskari.log.LogFactory;
 import fi.nls.oskari.log.Logger;
 import fi.nls.oskari.util.IOHelper;
@@ -44,6 +45,11 @@ public class KomuProjActionHandler extends RestActionHandler {
 
     @Override
     public void handlePost(ActionParameters params) throws ActionException {
+        if (true) {
+            // TODO: enable after release
+            // disabled for Oskari 3.1.0 release
+            throw new ActionDeniedException("N/A");
+        }
         try {
             HttpURLConnection conn = getConnection(params);
 
