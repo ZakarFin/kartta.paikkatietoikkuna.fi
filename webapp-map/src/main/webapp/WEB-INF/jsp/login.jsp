@@ -189,7 +189,7 @@
         </div>
 
         <div class="login-information">
-            <p>Ongelmatilanteissa ota yhteyttä asiakaspalveluumme: paikkatietoikkuna@maanmittauslaitos.fi.</p>
+            <p>Ongelmatilanteissa ota yhteyttä <a href="https://www.maanmittauslaitos.fi/yhteydenotto" target="_blank">asiakaspalveluumme</a>.</p>
         </div>
     </c:if>
 
@@ -238,7 +238,7 @@
         </div>
 
         <div class="login-information">
-            <p>Vid problem, kontakta vår kundservice paikkatietoikkuna@lantmateriverket.fi.</p>
+            <p>Vid problem, kontakta vår <a href="https://www.maanmittauslaitos.fi/sv/ta-kontakt" target="_blank">kundservice</a>.</p>
         </div>
     </c:if>
 
@@ -285,7 +285,7 @@
         </div>
 
         <div class="login-information">
-            <p>If you encounter problems on this site, please contact our customer service: paikkatietoikkuna@maanmittauslaitos.fi. </p>
+            <p>If you encounter problems on this site, please contact our <a href="https://www.maanmittauslaitos.fi/en/contact-us" target="_blank">customer service</a>. </p>
         </div>
     </c:if>
 
