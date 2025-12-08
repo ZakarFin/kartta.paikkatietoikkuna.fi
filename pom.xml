@@ -101,8 +101,6 @@
         <module>server-extension</module>
         <module>webapp-map</module>
         <module>webapp-landing</module>
-        <!-- module>service-spatineo-serval</module -->
-        <module>service-coordtransform</module>
     </modules>
 
 </project>
