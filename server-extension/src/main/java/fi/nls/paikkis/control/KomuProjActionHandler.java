@@ -1,4 +1,4 @@
-package fi.nls.paikkatietoikkuna.coordtransform;
+package fi.nls.paikkis.control;
 
 import fi.nls.oskari.control.ActionCommonException;
 import fi.nls.oskari.log.LogFactory;

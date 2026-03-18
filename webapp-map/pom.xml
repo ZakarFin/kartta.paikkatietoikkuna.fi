@@ -27,11 +27,6 @@
             <artifactId>server-extension</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>fi.nls.paikkatietoikkuna</groupId>
-            <artifactId>service-coordtransform</artifactId>
-            <version>${project.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.oskari</groupId>
